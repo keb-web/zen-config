@@ -105,10 +105,10 @@ TODO: COPY SETHU's FUNCTION LAYER
      &trans         &kp F1        &kp F2        &kp F3        &kp F4       &bt BT_SEL 1       &kp C_MUTE     &trans        &kp C_PP      &trans        &trans      &bt bootloader 
 //├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //│              │  F5         │  F6         │  F7         │  F8         │  BT2        │   │  VOL UP      │  BRIGHT UP  │  NEXT SONG  │             │             │             │
-     &trans         &kp F5        &kp F6        &kp F7        &kp F8       &bt BT_SEL 2       &kp C_VOL_UP   &C_BRI_UP     &kp C_NEXT    &trans        &trans        &trans
+     &trans         &kp F5        &kp F6        &kp F7        &kp F8       &bt BT_SEL 2      &kp C_VOL_UP   &kp C_BRI_UP   &kp C_NEXT    &trans        &trans        &trans
 //├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   
-//│              │  F9         │  F10        │  F11        │  F12        │  BT3        │   │  VOL DOWN    │  BIRHGT DWN │  PREV SONG  │             │             │             │
-     &trans         &kp F9        &kp F10       &kp F11       &kp F12       &bt BT_SEL 3       &kp C_VOL_DN   &C_BRI_DN     &kp C_PREV    &trans        &trans        &trans
+//│              │  F9         │  F10        │  F11        │  F12        │  BT3        │   │  VOL DOWN    │  BRIGHT DWN │  PREV SONG  │             │             │             │
+     &trans         &kp F9        &kp F10       &kp F11       &kp F12      &bt BT_SEL 3      &kp C_VOL_DN   &kp C_BRI_DN   &kp C_PREV    &trans        &trans        &trans
 //╰──────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                                          BT_CLEAR
                                                 &trans        &trans       &bt BT_CLR         &trans         &trans        &trans 
