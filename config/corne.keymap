@@ -102,7 +102,7 @@ TODO: COPY SETHU's FUNCTION LAYER
 // Bootloader = Flash new firmware
 //╭──────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭──────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   
 //│              │  F1         │  F2         │  F3         │  F4         │  BT1        │   │  VOL MUTE    │             │  PAUSE SONG │             │             │  BOOTLOADER │
-     &trans         &kp F1        &kp F2        &kp F3        &kp F4       &bt BT_SEL 1       &kp C_MUTE     &trans        &kp C_PP      &trans        &trans      &bt bootloader 
+     &trans         &kp F1        &kp F2        &kp F3        &kp F4       &bt BT_SEL 1       &kp C_MUTE     &trans        &kp C_PP      &trans        &trans      &bootloader 
 //├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //│              │  F5         │  F6         │  F7         │  F8         │  BT2        │   │  VOL UP      │  BRIGHT UP  │  NEXT SONG  │             │             │             │
      &trans         &kp F5        &kp F6        &kp F7        &kp F8       &bt BT_SEL 2      &kp C_VOL_UP   &kp C_BRI_UP   &kp C_NEXT    &trans        &trans        &trans
