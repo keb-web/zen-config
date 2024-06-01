@@ -1,9 +1,7 @@
+Poor Man's Corne-ish Zen
+
 !["Keymap"](my_keymap.svg)
 
-## Planned Future Configurations
-
-- Home Row Modifier
+## TODO
+- Test Home Row Modifiers
 - More Chords/Combos
-
-- Fix paintjob
-- swap switches and keycaps
