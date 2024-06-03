@@ -5,3 +5,4 @@ Poor Man's Corne-ish Zen
 ## TODO
 - Test Home Row Modifiers
 - More Chords/Combos
+- prtScrn, combos for taking screenshots, swapping monitors
