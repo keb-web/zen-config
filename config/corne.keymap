@@ -25,11 +25,11 @@ TODO: COPY SETHU's FUNCTION LAYER
 		compatible = "zmk,combos";
 
 	// j+k -> ESC
-	combo_esc {
-			timeout-ms = <50>;
-			key-positions = <19 20>; 
-			bindings = <&kp ESC>;
-		};
+	//combo_esc {
+	//		timeout-ms = <50>;
+	//		key-positions = <19 20>; 
+	//		bindings = <&kp ESC>;
+	//	};
 	};
 
 	conditional_layers {
