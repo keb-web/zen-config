@@ -1,8 +1,15 @@
-Poor Man's Corne-ish Zen
+## Keyboards:
+### Poor Man's Corne-ish Zen
+!["corne"](assets/corne.jpg)
 
-!["Keymap"](my_keymap.svg)
+### Hand-Wired Dactyl Cygnus
+!["cygnus"](assets/cygnus.jpg)
+
+## Keymap
+!["keymap"](assets/my_keymap.svg)
 
 ## TODO
+- Update SVG keymap image
 - GAMING LAYER
 - Test Home Row Modifiers
 - More Chords/Combos
