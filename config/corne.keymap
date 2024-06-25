@@ -24,18 +24,18 @@ TODO: COPY SETHU's FUNCTION LAYER
 	combos {
 		compatible = "zmk,combos";
 
-	// j+k -> ESC
-	//combo_esc {
-	//		timeout-ms = <50>;
-	//		key-positions = <19 20>; 
-	//		bindings = <&kp ESC>;
-	//	};
+		// U + I + O -> CAPSLOCK
+		combo_caps {
+			timeout-ms = <50>;
+			key-positions = <7 8 9>;
+			bindings = <&kp CAPSLOCK>;
+		};
 	};
 
 	conditional_layers {
 		compatible = "zmk,conditional-layers";
 
-	// LOWER + UPPER = FUNCTION LAYER
+		// LOWER + UPPER = FUNCTION LAYER
 		tri_layer {
 			if-layers = <LWR UPR>;
 			then-layer = <FUN>;
@@ -47,7 +47,7 @@ TODO: COPY SETHU's FUNCTION LAYER
 
                 default_layer {
                       bindings = <
-// MAC
+// MAC                                                                                (         ESC         )
 //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
 //│  TAB     │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │  BSPC    │
      &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC
@@ -66,7 +66,7 @@ TODO: COPY SETHU's FUNCTION LAYER
 
                 windows_layer {
                       bindings = <
-// WIN
+// WIN                                                                                (         ESC         )
 //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
 //│  TAB     │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │  BSPC    │
      &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC
@@ -109,10 +109,10 @@ TODO: COPY SETHU's FUNCTION LAYER
 //│  TAB     │  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  (       │  )       │  BSPC    │
      &kp TAB   &kp EXCL    &kp AT    &kp HASH   &kp DLLR  &kp PRCNT      &kp CARET   &kp AMPS  &kp ASTRK   &kp LPAR   &kp RPAR   &kp BSPC
 //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-//│  CTRL    │          │          │          │          │          │   │  -       │  =       │  [       │  ]       │  /       │  `       │
+//│  CTRL    │          │  [       │  {       │  (       │          │   │  -       │  =       │  [       │  ]       │  /       │  `       │
     &kp LCTRL   &trans    &kp LBKT   &kp LBRC   &kp LPAR    &trans       &kp MINUS  &kp EQUAL   &kp LBKT   &kp RBKT   &kp BSLH  &kp GRAVE
 //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤
-//│  SHFT    │          │          │          │          │          │   │  _       │  +       │  {       │  }       │  "|"     │  ~       │
+//│  SHFT    │          │  ]       │  }       │  )       │          │   │  _       │  +       │  {       │  }       │  "|"     │  ~       │
    &kp LSHFT    &trans    &kp RBKT   &kp RBRC   &kp RPAR    &trans       &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE  &kp TILDE
 //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────├──────────┼──────────┼──────────┴──────────┴──────────╯
 //				      CMD                   SPC		   ENTR                  ALT
@@ -125,18 +125,18 @@ TODO: COPY SETHU's FUNCTION LAYER
 			bindings = <
 // FUNCTION
 // Bootloader = Flash new firmware
-//╭──────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭──────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   
-//│  WINDOWS     │  F1         │  F2         │  F3         │  F4         │  BT0        │   │  VOL MUTE    │             │  PAUSE SONG │             │             │  BOOTLOADER │
-     &tog WIN       &kp F1        &kp F2        &kp F3        &kp F4       &bt BT_SEL 0       &kp C_MUTE     &trans        &kp C_PP      &trans        &trans        &bootloader 
+//╭──────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭──────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+//│  WINDOWS     │  F1         │  F2         │  F3         │  F4         │  BT0        │   │ BT3          │  VOL MUTE   │             │  PAUSE SONG │             │ BOOTLOADER  │
+     &tog WIN       &kp F1        &kp F2        &kp F3        &kp F4       &bt BT_SEL 0      &bt BT_SEL 3    &kp C_MUTE    &trans        &kp C_PP      &trans       &bootloader
 //├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//│              │  F5         │  F6         │  F7         │  F8         │  BT1        │   │  VOL UP      │  BRIGHT UP  │  NEXT SONG  │             │             │             │
-     &trans         &kp F5        &kp F6        &kp F7        &kp F8       &bt BT_SEL 1      &kp C_VOL_UP   &kp C_BRI_UP   &kp C_NEXT    &trans        &trans        &trans
-//├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   
-//│              │  F9         │  F10        │  F11        │  F12        │  BT2        │   │  VOL DOWN    │  BRIGHT DWN │  PREV SONG  │             │             │             │
-     &trans         &kp F9        &kp F10       &kp F11       &kp F12      &bt BT_SEL 2      &kp C_VOL_DN   &kp C_BRI_DN   &kp C_PREV    &trans        &trans        &trans
+//│              │  F5         │  F6         │  F7         │  F8         │  BT1        │   │ BT4             VOL UP     │  BRIGHT UP  │  NEXT SONG  │             │             │
+     &trans         &kp F5        &kp F6        &kp F7        &kp F8       &bt BT_SEL 1      &bt BT_SEL 4   &kp C_VOL_UP  &kp C_BRI_UP   &kp C_NEXT    &trans        &trans
+//├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+//│              │  F9         │  F10        │  F11        │  F12        │  BT2        │   │ BT_CLEAR     │  VOL DOWN   │ BRIGHT DWN  │ PREV SONG   │             │             │
+     &trans         &kp F9        &kp F10       &kp F11       &kp F12      &bt BT_SEL 2      &bt BT_CLR    &kp C_VOL_DN   &kp C_BRI_DN  &kp C_PREV     &trans        &trans
 //╰──────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-//                                                                          BT_CLEAR
-                                                &trans        &trans       &bt BT_CLR         &trans         &trans        &trans 
+//
+                                                &trans        &trans        &trans            &trans         &trans        &trans 
 //		                             ╰─────────────┴─────────────┴─────────────╯   ╰──────────────┴─────────────┴─────────────╯ 
 			>;
 
