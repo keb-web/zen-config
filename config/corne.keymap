@@ -16,27 +16,6 @@
 #define FUN 4
 
 / {
-        macros {
-                // Windows Manager 
-                lm: lm{
-                    compatible = "zmk,behavior-macro-two-param";
-                    wait-ms = <0>;
-                    tap-ms = <0>;
-                    #binding-cells = <2>;
-                    bindings
-                        = <&macro_param_1to1>
-                        , <&macro_press &mo MACRO_PLACEHOLDER>
-                        , <&macro_param_2to1>
-                        , <&macro_press &kp MACRO_PLACEHOLDER>
-                        , <&macro_pause_for_release>
-                        , <&macro_param_2to1>
-                        , <&macro_release &kp MACRO_PLACEHOLDER>
-                        , <&macro_param_1to1>
-                        , <&macro_release &mo MACRO_PLACEHOLDER>
-                        ;
-                };
-        };
-
 	combos {
 		compatible = "zmk,combos";
 		// U + I + O -> CAPSLOCK
@@ -71,10 +50,10 @@
 &mt LCTRL ESC   &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L     &kp SEMI    &kp SQT
 //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤
 //│  SHFT    │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ ,        │ .        │  /       │  ESC     │
-   &kp LSHFT    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH   &lm RALT LWR
+   &kp LSHFT    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp ESC
 //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────├──────────┼──────────┼──────────┴──────────┴──────────╯
 //				      CMD        UPPER      SPC		   ENTR       LOWER      ALT
-                  		     &kp LGUI    &mo UPR    &kp SPACE      &kp RET    &mo LWR     &kp RALT
+                  		     &kp LGUI    &mo UPR    &kp SPACE      &kp RET    &mo LWR    &kp RALT
 //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯ 
                         >;
                 };
