@@ -1,15 +1,20 @@
 ## TODO
-- macros (save nvim, i3wm?)
+- macros 
+    -> save nvim
+    ~~ -> copy paste ~~
+    -> i3wm?
+- strengthen bluetooth connection
+- make 'layer' + 'Alt' a combo instead of 'nested-in-layer' button
 - Update SVG keymap image
 - GAMING LAYER??
 - Test Home Row Modifiers
 - More Chords/Combos
 - prtScrn, combos for taking screenshots, swapping monitors
-- i3 (when w+e+k pressed. swap to number layer and next key press is alt + number key.
-- layer tap to combine enter and layer key on right side (good change for future barstardkeyboard)
+- layer tap to combine enter and layer key on right side (good change for future barstardkeyboard/ferris)
 
 ## Keyboards:
 ### Poor Man's Corne-ish Zen
+i dream of owning a corne
 !["corne"](assets/corne.jpg)
 
 ### Hand-Wired Dactyl Cygnus
