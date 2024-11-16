@@ -14,7 +14,8 @@
 
 ## Keyboards:
 ### Poor Man's Corne-ish Zen
-i dream of owning a corne
+3d-printed "Corne-ish Zen"-ish
+!["poorman"](assets/poor-man.jpg)
 !["corne"](assets/corne.jpg)
 
 ### Hand-Wired Dactyl Cygnus
