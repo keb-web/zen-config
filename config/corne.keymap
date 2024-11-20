@@ -85,7 +85,7 @@
 //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
 //│  CTRL    │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;       │  '       │
 // &mt LCTRL ESC   &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L     &kp SEMI    &kp SQT
-&mt LCTRL ESC &hrm A LCTRL &hrm S LALT &hrm D LGUI &hrm F LSHIFT &kp G &kp H &hrm J RSHIFT &hrm K RGUI &hrm L RALT &hrm ; &kp RCTRL &kp '
+&mt LCTRL ESC &hrm A LCTRL &hrm S LALT &hrm D LGUI &hrs F LSHIFT &kp G &kp H &hrs J RSHIFT &hrm K RGUI &hrm L RALT &hrm ; &kp RCTRL &kp '
 
 
 //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤
