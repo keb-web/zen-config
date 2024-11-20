@@ -104,6 +104,7 @@
 //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
 //│  CMD     │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;       │  '       │
   &mt LGUI ESC  &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L     &kp SEMI    &kp SQT
+  &mt LGUI ESC &hrm LGUI A &hrm LALT S &hrm LCTRL D &hrs LSHFT F &kp G &kp H &hrs RSHFT J &hrm RCTRL K &hrm RALT L &hrm RGUI SEMI &kp SQT
 //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤
 //│  SHFT    │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ ,        │ .        │  /       │  ESC     │
    &kp LSHFT    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp ESC
