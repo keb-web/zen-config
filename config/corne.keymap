@@ -102,7 +102,7 @@
      &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC
 //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
 //│  CMD     │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;       │  '       │
-  &mt LGUI ESC &hrm LGUI A &hrm LALT S &hrm LCTRL D &hrs LSHFT F &kp G &kp H &hrs RSHFT J &hrm RCTRL K &hrm RALT L &hrm RGUI SEMI &kp SQT
+  &mt LCTRL ESC &hrm LGUI A &hrm LALT S &hrm LCTRL D &hrs LSHFT F &kp G &kp H &hrs RSHFT J &hrm RCTRL K &hrm RALT L &hrm RGUI SEMI &kp SQT
 //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤
 //│  SHFT    │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ ,        │ .        │  /       │  ESC     │
    &kp LSHFT    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH   &kp ESC
