@@ -60,17 +60,17 @@
             key-positions = <7 8>;
             bindings = <&kp CAPSLOCK>;
         };
+
+        layer-4 {
+            bindings = <&mo 4>;
+            key-positions = <34 35>;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         // LOWER + UPPER = FUNCTION LAYER
-
-        tri_layer {
-            if-layers = <LWR UPR>;
-            then-layer = <FUN>;
-        };
     };
 
     keymap {
