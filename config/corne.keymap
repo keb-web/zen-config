@@ -78,37 +78,37 @@
 
         default_layer {
             bindings = <
-&kp TAB        &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y         &kp U          &kp I         &kp O        &kp P            &kp BSPC
-&mt LCTRL ESC  &hrm LCMD A  &hrm LALT S  &hrm LCTRL D  &hrs LSHFT F  &kp G          &kp H         &hrs RSHFT J   &hrm RCTRL K  &hrm RALT L  &hrm RMETA SEMI  &kp SQT
-&kp LSHFT      &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N         &kp M          &kp COMMA     &kp DOT      &kp FSLH         &kp ESC
-                                         &mo 4         &kp TAB       &lt 3 SPACE    &lt 2 ESCAPE  &kp BACKSPACE  &mo 4
+&trans  &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y         &kp U          &kp I         &kp O        &kp P            &trans
+&trans  &hrm LCMD A  &hrm LALT S  &hrm LCTRL D  &hrs LSHFT F  &kp G          &kp H         &hrs RSHFT J   &hrm RCTRL K  &hrm RALT L  &hrm RMETA SEMI  &trans
+&trans  &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N         &kp M          &kp COMMA     &kp DOT      &kp FSLH         &trans
+                                  &mo 4         &kp TAB       &lt 3 SPACE    &lt 2 ESCAPE  &kp BACKSPACE  &mo 4
             >;
         };
 
         windows_layer {
             bindings = <
-&kp TAB        &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y         &kp U          &kp I         &kp O        &kp P           &kp BSPC
-&mt LCTRL ESC  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrs LSHFT F  &kp G          &kp H         &hrs RSHFT J   &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMI  &kp SQT
-&kp LSHFT      &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N         &kp M          &kp COMMA     &kp DOT      &kp FSLH        &kp ESC
-                                         &mo 4         &kp TAB       &lt 3 SPACE    &lt 2 ESCAPE  &kp BACKSPACE  &mo 4
+&trans  &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y         &kp U          &kp I         &kp O        &kp P           &trans
+&trans  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrs LSHFT F  &kp G          &kp H         &hrs RSHFT J   &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMI  &trans
+&trans  &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N         &kp M          &kp COMMA     &kp DOT      &kp FSLH        &trans
+                                  &mo 4         &kp TAB       &lt 3 SPACE    &lt 2 ESCAPE  &kp BACKSPACE  &mo 4
             >;
         };
 
         lower_layer {
             bindings = <
-&kp TAB           &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS     &trans    &trans     &trans     &trans     &trans  &kp BSPC
-&mt LCTRL ESCAPE  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&kp LSHFT         &trans        &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &kp RALT
-                                        &trans  &kp N0  &kp SPACE    &trans    &trans     &kp RALT
+&trans  &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS     &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans        &kp N1  &kp N2  &kp N3  &kp EQUAL    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+                              &trans  &kp N0  &kp SPACE    &trans    &trans     &kp RALT
             >;
         };
 
         upper_layer {
             bindings = <
-&kp TAB    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK          &kp LPAR       &kp RPAR   &kp BSPC
-&kp LCTRL  &trans    &kp LBKT  &kp LBRC  &kp LPAR  &trans       &kp MINUS  &kp EQUAL  &kp SQT            &kp BACKSLASH  &kp TILDE  &kp TILDE
-&kp LSHFT  &trans    &kp RBKT  &kp RBRC  &kp RPAR  &trans       &kp UNDER  &kp PLUS   &kp DOUBLE_QUOTES  &kp PIPE       &kp GRAVE  &kp GRAVE
-                               &kp LGUI  &trans    &kp SPACE    &kp RET    &kp DEL    &kp RALT
+&trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK          &kp LPAR       &kp RPAR   &trans
+&trans  &trans    &kp LBKT  &kp LBRC  &kp LPAR  &trans       &kp MINUS  &kp EQUAL  &kp SQT            &kp BACKSLASH  &kp TILDE  &trans
+&trans  &trans    &kp RBKT  &kp RBRC  &kp RPAR  &trans       &kp UNDER  &kp PLUS   &kp DOUBLE_QUOTES  &kp PIPE       &kp GRAVE  &trans
+                            &kp LGUI  &trans    &kp SPACE    &kp RET    &kp DEL    &kp RALT
             >;
         };
 
