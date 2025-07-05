@@ -57,13 +57,8 @@
 
         combo_caps {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <7 8 9>;
             bindings = <&kp CAPSLOCK>;
-        };
-
-        layer-4 {
-            bindings = <&mo 3>;
-            key-positions = <34 35>;
         };
     };
 
