@@ -62,7 +62,7 @@
         };
 
         layer-4 {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <34 35>;
         };
     };
@@ -81,16 +81,7 @@
 &trans  &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y         &kp U          &kp I         &kp O        &kp P            &trans
 &trans  &hrm LCMD A  &hrm LALT S  &hrm LCTRL D  &hrs LSHFT F  &kp G          &kp H         &hrs RSHFT J   &hrm RCTRL K  &hrm RALT L  &hrm RMETA SEMI  &trans
 &trans  &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N         &kp M          &kp COMMA     &kp DOT      &kp FSLH         &trans
-                                  &mo 4         &kp TAB       &lt 3 SPACE    &lt 2 ESCAPE  &kp BACKSPACE  &mo 4
-            >;
-        };
-
-        windows_layer {
-            bindings = <
-&trans  &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y         &kp U          &kp I         &kp O        &kp P           &trans
-&trans  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrs LSHFT F  &kp G          &kp H         &hrs RSHFT J   &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMI  &trans
-&trans  &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N         &kp M          &kp COMMA     &kp DOT      &kp FSLH        &trans
-                                  &mo 4         &kp TAB       &lt 3 SPACE    &lt 2 ESCAPE  &kp BACKSPACE  &mo 4
+                                  &mo 3         &kp TAB       &lt 2 SPACE    &lt 1 ESCAPE  &kp BACKSPACE  &mo 3
             >;
         };
 
@@ -114,10 +105,10 @@
 
         function_layer {
             bindings = <
-&tog WIN  &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 3  &kp C_MUTE    &trans        &kp C_PP    &trans  &bootloader
-&trans    &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 4  &kp C_VOL_UP  &kp C_BRI_UP  &kp C_NEXT  &trans  &trans
-&trans    &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 2    &bt BT_CLR    &kp C_VOL_DN  &kp C_BRI_DN  &kp C_PREV  &trans  &trans
-                           &trans   &trans   &trans          &trans        &trans        &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 3  &kp C_MUTE    &trans        &kp C_PP    &trans  &bootloader
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 4  &kp C_VOL_UP  &kp C_BRI_UP  &kp C_NEXT  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 2    &bt BT_CLR    &kp C_VOL_DN  &kp C_BRI_DN  &kp C_PREV  &trans  &trans
+                         &trans   &trans   &trans          &trans        &trans        &trans
             >;
         };
     };
